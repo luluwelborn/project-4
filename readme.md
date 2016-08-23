@@ -14,7 +14,7 @@ Make sure you review your project proposal with your instructor so you can make 
 
 Your app must:
 
-* **Build a full-stack application** by making your own backend and your own front-end
+* **Build a full-stack application**
 * **Consume and/or serve an API**
 * **Have an interactive front-end**, preferably using a modern front-end framework
 * **Be a complete product**, which most likely means multiple relationships and CRUD functionality for at least a couple models
@@ -89,7 +89,7 @@ Imagine a realtime messaging client, but with private messages, an inbox, unread
 
 * __Creativity__: Did you added a personal spin or creative element into your project submission? Did you deliver something of value to the end user (not just a login button and an index page)?
 
-* __Code Quality__: Did you follow code style guidance and best practices covered in class, such as spacing, modularity, and semantic naming? Did you comment your code as your instructors as we have in class?
+* __Code Quality__: Did you follow code style guidance and best practices covered in class, such as spacing, modularity, and semantic naming? Did you comment your code as we have in class?
 
 * __Problem Solving__: Are you able to defend why you implemented your solution in a certain way? Can you demonstrated that you thought through alternative implementations? _(Note that this part of your feedback evaluation will take place during your one-on-one code review with your instructors, after you've completed the project.)_
 
