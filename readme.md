@@ -14,7 +14,7 @@ Make sure you review your project proposal with your instructor so you can make 
 
 Your app must:
 
-* **Build a full-stack application**
+* **Be a full-stack application**
 * **Consume and/or serve an API**
 * **Have an interactive front-end**, preferably using a modern front-end framework
 * **Be a complete product**, which most likely means multiple relationships and CRUD functionality for at least a couple models
@@ -83,23 +83,23 @@ Imagine a realtime messaging client, but with private messages, an inbox, unread
 
 ### Project Feedback + Evaluation
 
-* __Project Workflow__: Did you complete the user stories, wireframes, task tracking, and/or ERDs, as specified above? Did you use source control as expected for the phase of the program you’re in (detailed above)?
+The idea and tasks of this project will be approved by your peers, and then by an instructor.  You **must** have a target velocity that is the sum of all the story points in your task board.  
 
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
+Your peers will let you know if you're biting off more than you can chew or if you can stretch harder.  
 
-* __Creativity__: Did you added a personal spin or creative element into your project submission? Did you deliver something of value to the end user (not just a login button and an index page)?
+Then your instructor will **give you a clear number of points you must attain** in order to pass, based on what seems doable.  If at any point during project week you feel you will not be able to complete that number of points, it is **your responsibility** to inform an instructor as soon as possible, so that an alternative plan can be established.
 
-* __Code Quality__: Did you follow code style guidance and best practices covered in class, such as spacing, modularity, and semantic naming? Did you comment your code as we have in class?
-
-* __Problem Solving__: Are you able to defend why you implemented your solution in a certain way? Can you demonstrated that you thought through alternative implementations? _(Note that this part of your feedback evaluation will take place during your one-on-one code review with your instructors, after you've completed the project.)_
+There will be time on the morning after graduation to tweak your project and get above the line, but you should have a goal of **completing the target number of points by 2pm Wednesday 2/1**, and if you feel you cannot hit that deadline, it is **your responsibility** to inform an instructor as soon as possible.
 
 * __Total__: Your instructors will give you a total score on your project between:
 
     Score | Expectations
     ----- | ------------
-    **0** | _Incomplete._
-    **1** | _Does not meet expectations._
-    **2** | _Meets expectactions, good job!_
-    **3** | _Exceeds expectations, you wonderful creature, you!_
+    **0** | _Project did not come close to velocity goal. Incomplete._
+    **1** | _Project is close to velocity goal. Will need to use make-up time to pass. Does not meet expectations._
+    **2** | _Velocity goal reached. Meets expectactions, good job!_
+    **3** | _Velocity goal exceeded. Exceeds expectations, you wonderful creature, you!_
+
+A 2 or a 3 will be a passing grade.  The instructors will not give specific feedback before graduation, so if you would like some code pointers, set up an appointment with Zeb before the Developer Showcase at 4pm on Thursday 2/9.
 
  This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
