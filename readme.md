@@ -5,6 +5,15 @@
 Trello Boards:
 https://trello.com/b/ToBtKTAo/project-4
 
+Wireframe:
+https://github.com/luluwelborn/project-4/blob/master/assets/wireframe.jpg
+
+---
+
+### Tech Used
+
+This project is built with Flexbox, js, react, and a firebase server.
+
 ---
 
 ### Technical Requirements
