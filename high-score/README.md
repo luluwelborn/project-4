@@ -1,3 +1,23 @@
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Unit #4 Project: Portfolio Project
+
+### Links
+
+Trello Boards:
+https://trello.com/b/ToBtKTAo/project-4
+
+Wireframe:
+https://github.com/luluwelborn/project-4/blob/master/assets/wireframe.jpg
+
+---
+
+### Tech Used
+
+This project is built with react & firebase
+
+---
+
+### React App Info
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
