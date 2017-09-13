@@ -3,7 +3,7 @@
 ### Links
 
 Trello Boards:
-https://trello.com/b/ToBtKTAo/project-4
+https://trello.com/b/FGDTzZak/project-4b
 
 Wireframe:
 https://github.com/luluwelborn/project-4/blob/master/assets/wireframe.jpg
@@ -12,7 +12,7 @@ https://github.com/luluwelborn/project-4/blob/master/assets/wireframe.jpg
 
 ### Tech Used
 
-This project is built with react & firebase
+This project is built with react & firebase.
 
 ---
 
