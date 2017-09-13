@@ -12,8 +12,7 @@ https://github.com/luluwelborn/project-4/blob/master/assets/wireframe.jpg
 
 ### Tech Used
 
-This project is built with Flexbox, js, react, and a firebase server.
-
+This project is built with react & firebase
 ---
 
 ### Technical Requirements
