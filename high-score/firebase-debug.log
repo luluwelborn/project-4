@@ -1,0 +1,28 @@
+[debug] [2017-09-14T20:39:32.720Z] ----------------------------------------------------------------------
+[debug] [2017-09-14T20:39:32.723Z] Command:       /usr/local/Cellar/node/8.2.1/bin/node /usr/local/bin/firebase serve
+[debug] [2017-09-14T20:39:32.724Z] CLI Version:   3.10.1
+[debug] [2017-09-14T20:39:32.724Z] Platform:      darwin
+[debug] [2017-09-14T20:39:32.724Z] Node Version:  v8.2.1
+[debug] [2017-09-14T20:39:32.724Z] Time:          Thu Sep 14 2017 14:39:32 GMT-0600 (MDT)
+[debug] [2017-09-14T20:39:32.724Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-14T20:39:32.748Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-14T20:39:32.749Z] > authorizing via signed-in user
+[debug] [2017-09-14T20:39:32.751Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/high-score-app-3c45c  
+ Thu Sep 14 2017 14:39:32 GMT-0600 (MDT)
+[debug] [2017-09-14T20:39:33.125Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-14T20:39:33.126Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/high-score-app-3c45c/tokens  
+ Thu Sep 14 2017 14:39:33 GMT-0600 (MDT)
+[debug] [2017-09-14T20:39:33.524Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/laurenwelborn/Desktop/wdi-work/project-4/high-score'...
+[info] 
+[debug] [2017-09-14T20:39:33.527Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/high-score-app-3c45c  
+ Thu Sep 14 2017 14:39:33 GMT-0600 (MDT)
+[debug] [2017-09-14T20:39:33.792Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-14T20:39:33.792Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/671207886221/clients/_:getWebAppConfig  
+ Thu Sep 14 2017 14:39:33 GMT-0600 (MDT)
+[debug] [2017-09-14T20:39:34.028Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

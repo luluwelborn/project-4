@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>High Score</title>
@@ -24,36 +24,48 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade" rel="stylesheet">
 
   </head>
-  <body>
-    <div>
-      <h1>High Score</h1>
-    </div>
+<body>
 
+	<div class="row" class="col s12">
+		<h2>Input your email and password.</h2>
+	</div>
 
-    <!-- <script>
-      // document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+	<!-- FORM -->
+	<div class="row">
+    <form class="col s12">
+    	<div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn">SUBMIT</a>
+    </form>
+  </div>
 
-        // try {
-          // let app = firebase.app();
-          // let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          // document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        // } catch (e) {
-          // console.error(e);
-          // document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        // }
-      // });
-    </script> -->
+  <script>
+  	// CREATE NEW USER
+  	firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+  	// Handle Errors here.
+  	var errorCode = error.code;
+  	var errorMessage = error.message;
+  	// ...
+  	// Sign in existing users
+  	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+	  var errorCode = error.code;
+	  var errorMessage = error.message;
+	  // ...
+});
+});
+  </script>
 
-    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
     <script>
       // Initialize Firebase
       var config = {
@@ -66,6 +78,5 @@
       };
       firebase.initializeApp(config);
     </script>
-
-  </body>
+</body>
 </html>
