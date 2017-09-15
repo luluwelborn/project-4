@@ -155,6 +155,7 @@
           document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
           if (!emailVerified) {
             document.getElementById('quickstart-verify-email').disabled = false;
+            window.location="dashboard.html";
           }
           // [END_EXCLUDE]
         } else {
@@ -205,8 +206,8 @@
       Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
 
       <!-- user data on page -->
-      <!--  <div>Firebase auth <code>currentUser</code> object value:</div>
-            <pre><code id="quickstart-account-details">null</code></pre> -->
+       <div>Firebase auth <code>currentUser</code> object value:</div>
+            <pre><code id="quickstart-account-details">null</code></pre>
       </div>
    </div>
 </body>
