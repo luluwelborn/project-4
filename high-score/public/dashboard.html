@@ -10,7 +10,7 @@
     <!-- include only the Firebase features as you need -->
     <script defer src="/__/firebase/4.3.1/firebase-auth.js"></script>
     <script defer src="/__/firebase/4.3.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.3.1/firebase-messaging.js"></script>
+    <!-- <script defer src="/__/firebase/4.3.1/firebase-messaging.js"></script> -->
     <script defer src="/__/firebase/4.3.1/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
@@ -26,29 +26,19 @@
   </head>
   <body>
     <div>
-      <h2>Dashboard</h2>
-    </div>
-    <form>
-      Add a Game:<br>
-      <input type="text" name="AddAGame"><br>
-      <input type="submit" value="Add">
-    </form>
-    <br>
-    <div>
-      <select name="cars">
-        <option value="PickAGame">Pick a Game</option>
-        <option value="MedievalMadness">Medieval Madness</option>
-        <option value="AttackFromMars">Attack From Mars</option>
-        <option value="BuckHunter">BuckHunter</option>
-        <option value="Tetris">Tetris</option>
-      </select>
+      <h2>High Scores</h2>
     </div>
     <div>
-      <h3>Chosen Game Title</h3>
-      <h4>High Score: 847,003,292</h4>
+      <h6>Add a Game</h6>
+      <input type="text" id="gameName" placeholder="Enter Game Name" onkeypress="return saveToGame(event)" />
+      <h4>My Games</h4>
+      <ol id="myGames">
+        <!-- games will list here -->
+      </ol>
     </div>
 
   
-
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

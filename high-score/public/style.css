@@ -11,3 +11,9 @@ h2	{
 	font-family: 'Bungee', sans-serif;
 	color: #222;
 }
+
+#gameName
+{
+	color: blue;
+	font-size: 16px;
+}
