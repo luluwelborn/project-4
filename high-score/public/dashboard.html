@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade" rel="stylesheet">
 
@@ -27,17 +27,39 @@
   <body>
     <div>
       <h2>High Scores</h2>
+    <br>
+    <div>
+      <select name="Games">
+        <option value="PickAGame">Pick a Game</option>
+        <option value="MedievalMadness">Medieval Madness</option>
+        <option value="AttackFromMars">Attack From Mars</option>
+        <option value="BuckHunter">BuckHunter</option>
+        <option value="Tetris">Tetris</option>
+      </select>
     </div>
+    <br>
     <div>
       <h6>Add a Game</h6>
       <input type="text" id="gameName" placeholder="Enter Game Name" onkeypress="return saveToGame(event)" />
       <h4>My Games</h4>
       <ol id="myGames">
-        <!-- games will list here -->
       </ol>
     </div>
 
-  
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCH0dx7A6nicpyFz4BOKm1lNNUcCYjUk0E",
+        authDomain: "high-score-app-3c45c.firebaseapp.com",
+        databaseURL: "https://high-score-app-3c45c.firebaseio.com",
+        projectId: "high-score-app-3c45c",
+        storageBucket: "high-score-app-3c45c.appspot.com",
+        messagingSenderId: "671207886221"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
     <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
