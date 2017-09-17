@@ -1,33 +1,67 @@
 var myGames = new Firebase('https://high-score-app-3c45c.firebaseapp.com/');
+var database = firebase.database();
 
-function saveToGame(event) {
+// ------ SAVE GAME ------
+function saveToList(event) {
     if (event.which == 13 || event.keyCode == 13) { // as the user presses the enter key, we will attempt to save the data
         var gameName = document.getElementById('gameName').value.trim();
         if (gameName.length > 0) {
-        	var li = '<li>' + gameName + '</li>';
-            document.getElementById('myGames').innerHTML += li;
+            saveToFB(gameName);
         }
         document.getElementById('gameName').value = '';
         return false;
     }
 };
-
-function saveToFb(gameName) {
-	// save data to fb db from input
-	myGames.push({
-		name: gameName
-	});
+ 
+// ------ SAVE GAME TO DB ------
+function saveToFB(gameName) {
+    myGames.push({
+        name: gameName
+    });
 };
 
 function refreshUI(list) {
-	var list = '';
+    var lis = '';
     for (var i = 0; i < list.length; i++) {
-        list += '<li data-key="' + list[i].key + '">' + list[i].name + '</li>';
+        lis += '<li data-key="' + list[i].key + '">' + list[i].name + ' [' + genLinks(list[i].key, list[i].name) + ']</li>';
     };
-    document.getElementById('myGames').innerHTML = list;
+    document.getElementById('myGames').innerHTML = lis;
 };
 
-// fired on load and when there is a data change
+function genLinks(key, gmName) {
+    var links = '';
+    links += '<a href="javascript:edit(\'' + key + '\',\'' + gmName + '\')">Edit</a> | ';
+    links += '<a href="javascript:del(\'' + key + '\',\'' + gmName + '\')">Delete</a>';
+    return links;
+};
+
+// ------ EDIT GAME ------
+function edit(key, gmName) {
+    var gameName = prompt("Update the game name", gmName);
+    if (gameName && gameName.length > 0) {
+        // build the FB endpoint to the item in games list
+        var updateGameRef = buildEndPoint(key);
+        updateGameRef.update({
+            name: gameName
+        });
+    }
+}
+ 
+// ------ DELETE GAME ------
+function del(key, gmName) {
+    var response = confirm("Are certain about removing \"" + gmName + "\" from the list?");
+    if (response == true) {
+        // endpoint to the item in games list
+        var deleteGameRef = buildEndPoint(key);
+        deleteGameRef.remove();
+    }
+}
+ 
+function buildEndPoint (key) {
+	return new Firebase('https://high-score-app-3c45c.firebaseapp.com/' + key);
+}
+ 
+// this will get fired on inital load as well as when ever there is a change in the data
 myGames.on("value", function(snapshot) {
     var data = snapshot.val();
     var list = [];
