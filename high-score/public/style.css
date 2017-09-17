@@ -1,24 +1,93 @@
 body {
-	margin: 40px;
-	background: #efefef;
+	margin: auto;
+	background: #111;
     padding: 30px;
-    color: #222;
+    color: #fff;
+}
+
+nav.navbar-fixed-top {
+	background-color: #111;
+	border-color: #222 !important;
+}
+
+a {
+	color: #444;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #111;
+	color: #ff00ad;
+}
+
+li:hover {
+	background-color: #111;
 }
 
 h1	{
 	text-align: center;
 	font-family: 'Bungee Shade', sans-serif;
-	/*color: hotpink;*/
+	color: #ff00ad;
+	font-size: 72px;
+	line-height: 1;
+	padding-top: 60px;
 }
 
 h2	{
 	font-family: 'Bungee', sans-serif;
-	color: #222;
+	color: #ff00ad;
 	font-size: 40px;
+}
+
+h3	{
+	font-family: 'Bungee', sans-serif;
+}
+
+.btn-default {
+	text-align: center;
+	color: #ff00ad;
+	background-color: #111;
+	border: 1px solid #ff00ad;
+	padding: 12px;
+	box-shadow: -2px 2px 0px #ff00ad;
+	transform: scale(1, 1);
+  	transition: transform 0.20s ease;
+}
+
+.btn-default:hover {
+	text-align: center;
+	color: #ff00ad;
+	background-color: #111;
+	border: 1px solid #ff00ad;
+	padding: 12px;
+	box-shadow: -2px 2px 0px #ff00ad;
+	transform: scale(1.1, 1.1);
+/*	text-decoration: underline;*/
+/*	opacity: 0.2;*/
+}
+
+input {
+	color: #222;
+}
+
+select {
+	color: #222;
 }
 
 #gameName {
 	width: 90%;
+	max-width: 500px;
 	padding: 10px;
 	font-size: 16px;
 }
+
+.container-games {
+	background-color: #191919;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 200px;
+}
+
+
+
+

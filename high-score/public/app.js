@@ -21,11 +21,11 @@ function saveToFB(gameName) {
 };
 
 function refreshUI(list) {
-    var lis = '';
+    var list = '';
     for (var i = 0; i < list.length; i++) {
-        lis += '<li data-key="' + list[i].key + '">' + list[i].name + ' [' + genLinks(list[i].key, list[i].name) + ']</li>';
+        list += '<li data-key="' + list[i].key + '">' + list[i].name + ' [' + genLinks(list[i].key, list[i].name) + ']</li>';
     };
-    document.getElementById('myGames').innerHTML = lis;
+    document.getElementById('myGames').innerHTML = list;
 };
 
 function genLinks(key, gmName) {
@@ -47,7 +47,7 @@ function edit(key, gmName) {
     }
 }
  
-// ------ DELETE GAME ------
+// ------ SAVE GAME ------
 function del(key, gmName) {
     var response = confirm("Are certain about removing \"" + gmName + "\" from the list?");
     if (response == true) {
