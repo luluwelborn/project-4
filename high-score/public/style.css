@@ -14,9 +14,31 @@ nav.navbar-fixed-top {
 	font-family: 'Bungee', sans-serif;
 }
 
+.navbar-toggle {
+	border-color: #666;
+}
+
+span.icon-bar {
+	background-color: #666;
+}
+
+
 .container {
 	padding-right: 0;
 	padding-left: 0;
+	padding: auto;
+	margin: auto;
+	max-width: 500px;
+	/*text-align:center;*/
+}
+
+.container-games {
+	background-color: #191919;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 200px;
+	max-width: 500px;
+	/*text-align: center;*/
 }
 
 a {
@@ -48,6 +70,7 @@ h1	{
 }
 
 h2	{
+	text-align: center;
 	font-family: 'Bungee', sans-serif;
 	color: #ff00ad;
 	font-size: 40px;
@@ -99,19 +122,13 @@ select {
 }
 
 #gameName {
-	width: 90%;
-	max-width: 500px;
+	width: 100%;
+	/*max-width: 500px;*/
 	padding: 10px;
 	font-size: 16px;
 }
 
-.container-games {
-	background-color: #191919;
-	padding-left: 30px;
-	padding-top: 10px;
-	padding-bottom: 200px;
-	max-width: 500px;
-}
+
 
 
 
