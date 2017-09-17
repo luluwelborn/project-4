@@ -10,8 +10,17 @@ nav.navbar-fixed-top {
 	border-color: #222 !important;
 }
 
+.navbar-brand {
+	font-family: 'Bungee', sans-serif;
+}
+
+.container {
+	padding-right: 0;
+	padding-left: 0;
+}
+
 a {
-	color: #444;
+	color: #666;
 	text-decoration: none;
 }
 
@@ -28,19 +37,34 @@ h1	{
 	text-align: center;
 	font-family: 'Bungee Shade', sans-serif;
 	color: #ff00ad;
-	font-size: 72px;
+	font-size: 62px;
 	line-height: 1;
-	padding-top: 60px;
+	padding-top: 100px;
+	padding-bottom: 10px;
+	/* This creates the gradient*/
+/*	background: -webkit-linear-gradient(#ff00ad, #eb00ff);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;*/
 }
 
 h2	{
 	font-family: 'Bungee', sans-serif;
 	color: #ff00ad;
 	font-size: 40px;
+	padding-top: 60px;
 }
 
 h3	{
 	font-family: 'Bungee', sans-serif;
+}
+
+p.p-landing {
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2px;
+	max-width: 400px;
+	margin: auto;
+	color: #666;
 }
 
 .btn-default {
@@ -86,6 +110,7 @@ select {
 	padding-left: 30px;
 	padding-top: 10px;
 	padding-bottom: 200px;
+	max-width: 500px;
 }
 
 
