@@ -28,9 +28,9 @@
         <!-- Navbar Links -->
         <ul class="nav navbar-nav">
           <!-- <li><a href="/index">Home</a></li> -->
-          <li><a href="/dashboard">Dashboard</a></li>
-          <li><a href="/signin">Sign In/Out</a></li>
-          <li><a href="/about">About</a></li>
+          <li><a href="/dashboard.html">Dashboard</a></li>
+          <li><a href="/signin.html">Sign In/Out</a></li>
+          <!-- <li><a href="/about">About</a></li> -->
         </ul>
       </div>
     </nav>
@@ -51,7 +51,7 @@
     <br> -->
     <div class="container">
       <h6>Add a Game</h6>
-      <input type="text" id="gameName" placeholder="Enter Game Name" onkeypress="return saveToList(event)" />
+      <input type="text" id="gameName" placeholder="Enter Game Name and Score" onkeypress="return saveToList(event)" />
 
       <h3>My Games</h3>
       <ol id="myGames">
@@ -66,6 +66,18 @@
       </ol>
     </div> -->
 
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCH0dx7A6nicpyFz4BOKm1lNNUcCYjUk0E",
+        authDomain: "high-score-app-3c45c.firebaseapp.com",
+        databaseURL: "https://high-score-app-3c45c.firebaseio.com",
+        projectId: "high-score-app-3c45c",
+        storageBucket: "high-score-app-3c45c.appspot.com",
+        messagingSenderId: "671207886221"
+      };
+      firebase.initializeApp(config);
+    </script>
     <!-- Firebase scripts -->
     <!-- THIS FIRST LINE RUNNING THE GET ERROR, IF REMOVED, FB IS UNDEFINED -->
     <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>

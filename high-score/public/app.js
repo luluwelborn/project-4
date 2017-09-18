@@ -1,7 +1,3 @@
-// THROWING GET ERROR
-// var myGames = new Firebase('https://high-score-app-3c45c.firebaseapp.com/');
-
-
 // ------ GET GAME ON PAGE ------
 function saveToList(event) {
     if (event.which == 13 || event.keyCode == 13) { // save the data
@@ -14,6 +10,11 @@ function saveToList(event) {
         return false;
     }
 }
+
+
+// // THROWING GET ERROR
+// var myGames = new Firebase('https://high-score-app-3c45c.firebaseapp.com/');
+
 
 //  // ------ GET - SAVE GAME ------
 // function saveToList(event) {
