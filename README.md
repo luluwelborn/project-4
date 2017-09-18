@@ -2,11 +2,16 @@
 
 ### Links
 
-Trello Boards:
+##### Hosting URL:
+https://high-score-app-3c45c.firebaseapp.com
+
+##### Trello Boards:
 https://trello.com/b/FGDTzZak/project-4b
 
-Wireframe:
+##### Wireframe:
 https://github.com/luluwelborn/project-4/blob/master/assets/wireframe.jpg
+
+![alt tag](https://github.com/luluwelborn/project-4/blob/master/assets/Screen-Shot-of-App.png)
 
 ---
 
