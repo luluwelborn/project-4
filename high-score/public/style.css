@@ -1,5 +1,7 @@
 body {
-	margin: auto;
+	margin: 0;
+	padding: 0;
+	/*margin: auto;*/
 	background: #111;
     padding: 30px;
     color: #fff;
@@ -162,7 +164,25 @@ select {
 	font-size: 16px;
 }
 
+/* background animation*/
 
+.hero-bkg-animated {
+  background: gray url(/darknessuse.jpg) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -800px 0; }
+}
 
 
 
