@@ -1,3 +1,15 @@
+// ------ DROPDOWN GAMES DATA ------
+// var select = document.getElementById
+
+
+
+// var dropGames = ["Medieval Madness","Attack From Mars", "Buck Hunter"];
+// console.log(dropGames);   
+
+
+
+
+
 // ------ GET GAME ON PAGE ------
 // function saveToList(event) {
 //     if (event.which == 13 || event.keyCode == 13) { // save the data
@@ -15,7 +27,7 @@
 var myGames = new Firebase('https://high-score-app-3c45c.firebaseio.com/dashboard/');
  
 function saveToList(event) {
-    if (event.which == 13 || event.keyCode == 13) { // as the user presses the enter key, we will attempt to save the data
+    if (event.which == 13 || event.keyCode == 13) { // 13/enter saves
         var gameName = document.getElementById('gameName').value.trim();
         if (gameName.length > 0) {
             saveToFB(gameName);
@@ -42,8 +54,8 @@ function refreshUI(list) {
  
 function genLinks(key, gmName) {
     var links = '';
-    links += '&nbsp; <a href="javascript:edit(\'' + key + '\',\'' + gmName + '\')">Edit</a> &nbsp; ';
-    links += '<a href="javascript:del(\'' + key + '\',\'' + gmName + '\')">Delete</a> <hr>';
+    links += '&nbsp; <a href="javascript:edit(\'' + key + '\',\'' + gmName + '\')">edit</a> &nbsp; ';
+    links += '<a href="javascript:del(\'' + key + '\',\'' + gmName + '\')">delete</a> <hr>';
     return links;
 };
  
@@ -90,7 +102,36 @@ myGames.on("value", function(snapshot) {
     refreshUI(list);
 });
 
-// /////////////////////////////////////////////////////
+// // /////////////////////////////////////////////////////
 
+// TRY TWO FIELDS
 
+// function saveToList(event) {
+//     if (event.which == 13 || event.keyCode == 13) { // 13/enter saves data
+//         var gameName = document.getElementById('gameName').value.trim();
+//         var gameScore = document.getElementById('gameScore').value.trim();
+//         if (gameName.length > 0) {
+//             saveToFB(gameName, gameScore);
+//         }
+//         document.getElementById('gameName').value = '';
+//         document.getElementById('gameScore').value = '';
+//         return false;
+//     }
+// };
+ 
+// function saveToFB(gameName, gameScore) {
+//     // this will save data to Firebase
+//     myGames.push({
+//         name: gameName,
+//         score: gameScore
+//     });
+// };
+ 
+// function refreshUI(list) {
+//     var lis = '';
+//     for (var i = 0; i < list.length; i++) {
+//         lis += '<li data-key="' + list[i].key + '">' + list[i].name + list[i].score + '  ' + genLinks(list[i].key, list[i].name) + list[i].score + '</li>';
+//     };
+//     document.getElementById('myGames').innerHTML = lis;
+// };
 

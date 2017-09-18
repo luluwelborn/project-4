@@ -148,8 +148,9 @@
           document.getElementById('quickstart-sign-in').textContent = 'Sign out';
           document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
           if (!emailVerified) {
+            // setTimeout("timeout", 3000);
             document.getElementById('quickstart-verify-email').disabled = false;
-            window.location="dashboard.html";
+            // window.location="dashboard.html";
           }
           // [END_EXCLUDE]
         } else {

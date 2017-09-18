@@ -1,13 +1,14 @@
-// {
-//   "rules": true,
-//     ".write": true
-//   }
-// }
-
-
 {
   "rules": {
-    ".read": "auth != null",
-    ".write": "auth != null"
+    ".read": true,
+    ".write": true
   }
 }
+
+
+// {
+//   "rules": {
+//     ".read": "auth != null",
+//     ".write": "auth != null"
+//   }
+// }

@@ -41,6 +41,10 @@ span.icon-bar {
 	/*text-align: center;*/
 }
 
+.fa-edit {
+	color: #666;
+}
+
 hr {
 	border: 1px solid #222;
 	color: #222;
@@ -61,6 +65,11 @@ a {
 a:hover {
 	background-color: #111;
 	color: #ff00ad;
+}
+
+li {
+	font-size: 15px;
+	letter-spacing: 2px;
 }
 
 li:hover {
@@ -85,7 +94,7 @@ h2	{
 	text-align: center;
 	font-family: 'Bungee', sans-serif;
 	color: #ff00ad;
-	font-size: 40px;
+	font-size: 42px;
 	padding-top: 60px;
 }
 
@@ -93,6 +102,7 @@ h3	{
 	font-family: 'Bungee', sans-serif;
 	padding-bottom: 10px;
 	padding-top: 20px;
+	font-size: 30px;
 }
 
 p.p-landing {
@@ -138,6 +148,14 @@ select {
 }
 
 #gameName {
+	width: 100%;
+	/*max-width: 500px;*/
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+#gameScore {
 	width: 100%;
 	/*max-width: 500px;*/
 	padding: 10px;
