@@ -41,6 +41,18 @@ span.icon-bar {
 	/*text-align: center;*/
 }
 
+hr {
+	border: 1px solid #222;
+	color: #222;
+	background-color: #222;
+	margin: 10px;
+}
+
+ul {
+	padding-left: 0px;
+	list-style: none;
+}
+
 a {
 	color: #666;
 	text-decoration: none;
@@ -79,6 +91,8 @@ h2	{
 
 h3	{
 	font-family: 'Bungee', sans-serif;
+	padding-bottom: 10px;
+	padding-top: 20px;
 }
 
 p.p-landing {
@@ -114,7 +128,9 @@ p.p-landing {
 }
 
 input {
-	color: #222;
+	color: #666;
+	background-color: #333;
+	border: none;
 }
 
 select {

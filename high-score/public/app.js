@@ -35,22 +35,22 @@ function saveToFB(gameName) {
 function refreshUI(list) {
     var lis = '';
     for (var i = 0; i < list.length; i++) {
-        lis += '<li data-key="' + list[i].key + '">' + list[i].name + '  ' + genLinks(list[i].key, list[i].name) + ' &nbsp; &nbsp; </li>';
+        lis += '<li data-key="' + list[i].key + '">' + list[i].name + '  ' + genLinks(list[i].key, list[i].name) + '</li>';
     };
     document.getElementById('myGames').innerHTML = lis;
 };
  
 function genLinks(key, gmName) {
     var links = '';
-    links += '&nbsp; &nbsp; <a href="javascript:edit(\'' + key + '\',\'' + gmName + '\')">Edit</a>  &nbsp;  &nbsp;  ';
-    links += '<a href="javascript:del(\'' + key + '\',\'' + gmName + '\')">Delete</a>';
+    links += '&nbsp; <a href="javascript:edit(\'' + key + '\',\'' + gmName + '\')">Edit</a> &nbsp; ';
+    links += '<a href="javascript:del(\'' + key + '\',\'' + gmName + '\')">Delete</a> <hr>';
     return links;
 };
  
 function edit(key, gmName) {
-    var gameName = prompt("Update the game name", gmName); // to keep things simple and old skool :D
+    var gameName = prompt("Update the game name", gmName); 
     if (gameName && gameName.length > 0) {
-        // build the FB endpoint to the item in game collection
+        // build the FB endpoint to the item in games
         var updateGameRef = buildEndPoint(key);
         updateGameRef.update({
             name: gameName
@@ -61,7 +61,7 @@ function edit(key, gmName) {
 function del(key, gmName) {
     var response = confirm("Are certain about removing \"" + gmName + "\" from the list?");
     if (response == true) {
-        // build the FB endpoint to the item in game collection
+        // build the FB endpoint to the item in games
         var deleteGameRef = buildEndPoint(key);
         deleteGameRef.remove();
     }
