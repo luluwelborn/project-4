@@ -139,10 +139,20 @@ p.p-landing {
 /*	opacity: 0.2;*/
 }
 
+input.btn.btn-success-sm {
+	text-align: center;
+	color: #ff00ad;
+	background-color: #111;
+	padding-left: 12px;
+	padding-right: 12px;
+	border: 1px solid #ff00ad;
+}
+
 input {
 	color: #666;
 	background-color: #333;
 	border: none;
+	padding-bottom: 0px;
 }
 
 select {

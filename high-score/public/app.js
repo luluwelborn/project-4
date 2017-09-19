@@ -123,7 +123,7 @@ function saveToList(event) {
  
 function saveToFB(gameName, gameScore) {
     // this will save data to Firebase
-    console.log(gameName, gameScore);
+    // console.log(gameName, gameScore);
     myGames.push({
         name: gameName,
         score: gameScore
@@ -133,7 +133,7 @@ function saveToFB(gameName, gameScore) {
 function refreshUI(list) {
     var lis = '';
     for (var i = 0; i < list.length; i++) {
-        lis += '<li data-key="' + list[i].key + '">' + list[i].name + list[i].score + '  ' + genLinks(list[i].key, list[i].name, list[i].score) + '</li>';
+        lis += '<li data-key="' + list[i].key + '">' + list[i].name + "&nbsp; &nbsp;" + list[i].score + '  ' + genLinks(list[i].key, list[i].name, list[i].score) + '</li>';
     };
     document.getElementById('myGames').innerHTML = lis;
 };
@@ -141,21 +141,22 @@ function refreshUI(list) {
  
 function genLinks(key, gmName, gmScore) {
     var links = '';
-    // links += '&nbsp; <a href="javascript:edit(\'' + key + '\',\'' + gmName + '\', \'' + gmScore + '\')">edit</a> &nbsp; ';
+    links += '&nbsp; <a href="javascript:edit(\'' + key + '\',\'' + gmName + '\', \'' + gmScore + '\')">edit</a> &nbsp; ';
     links += '<a href="javascript:del(\'' + key + '\',\'' + gmName + '\', \'' + gmScore + '\')">delete</a> <hr>';
     return links;
 };
  
-// function edit(key, gmName, gmScore) {
-//     var gameName = prompt("Update the game name", gmName); 
-//     if (gameName && gameName.length > 0) {
-//         // build the FB endpoint to the item in games
-//         var updateGameRef = buildEndPoint(key);
-//         updateGameRef.update({
-//             name: gameName
-//         });
-//     }
-// }
+function edit(key, gmName, gmScore) {
+    var gameName = prompt("Update the game name", gmName); 
+    if (gameName && gameName.length > 0, gameScore && gameScore.length > 0) {
+        // build the FB endpoint to the item in games
+        var updateGameRef = buildEndPoint(key);
+        updateGameRef.update({
+            name: gameName,
+            score: gameScore
+        });
+    }
+}
 
 function del(key, gmName, gmScore) {
     var response = confirm("Are certain about removing \"" + gmName + "\", \"" + gmScore + "\" from the list?");

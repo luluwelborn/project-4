@@ -18,7 +18,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade" rel="stylesheet">
     <!-- font awesome -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
   </head>
   <body>
         <!-- NAVBAR -->
@@ -67,12 +67,14 @@
     </div> -->
 
     <!-- Input fields and button -->
-    <form id="gameForm">
-        <input type="text" id="gameName" placeholder="Enter Game Name">
+    <form class="form-inline">
+      <form id="gameForm" class="form-inline">
+          <input type="text" id="gameName" placeholder="Enter Game Name">
 
-        <input type="text" id="gameScore" placeholder="Enter Score">
-
-        <input type="button" onclick="saveToList()" value="SUBMIT">
+          <input type="text" id="gameScore" placeholder="Enter Score">
+          <br><br>
+          <input type="button" class="btn btn-success-sm" onclick="saveToList()" value="SUBMIT">
+      </form>
     </form>
 
       <!-- List -->
