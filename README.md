@@ -33,7 +33,9 @@ https://github.com/luluwelborn/project-4/blob/master/assets/wireframe.jpg
 
 Friday I was getting errors when routing data to the database. Throughout the weekend I re-wrote scripts, read documentation, entered my own data in the database dashboard, worked with files structure, etc. I even created a second app to try and connect my firebase project locally.
 
-I spoke with multiple people in class, compared code, and researched possible solutions ( for at leat 8 hours). I still have not found the solution to my issues.
+I spoke with multiple people in class, compared code, and researched possible solutions ( for at leat 8 hours). I still have not found the solution to my issues...
+
+... I HAVE A FULL-STACK APP NOW!!! Everything is working, and I added a pretty sweet spacey background animation to the landing page. Once I figure out why it's not deploying onto firebase hosting I will be all set!
 
 
 

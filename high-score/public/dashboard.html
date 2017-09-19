@@ -60,12 +60,20 @@
     </div>
     <br>  -->
 
-    <!-- Input Field -->
-    <div class="container">
-      <h6>Add a Game</h6>
-      <input type="text" id="gameName" placeholder="Enter Game Name" onkeypress="return saveToList(event)" />
-      <br>
-<!--       <input type="text" id="gameScore" placeholder="Enter Score" onkeypress="return saveToList(event)" /> -->
+    <h6>Add a Game</h6>
+    <!-- Input Field Singular-->
+<!--     <div class="container">
+      <input type="text" name="gameName" placeholder="Enter Game Name" onkeypress="return saveToList(event)" />
+    </div> -->
+
+    <!-- Input fields and button -->
+    <form id="gameForm">
+        <input type="text" id="gameName" placeholder="Enter Game Name">
+
+        <input type="text" id="gameScore" placeholder="Enter Score">
+
+        <input type="button" onclick="saveToList()" value="SUBMIT">
+    </form>
 
       <!-- List -->
       <h3>My Games</h3>
