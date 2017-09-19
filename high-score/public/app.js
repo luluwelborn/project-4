@@ -1,12 +1,4 @@
 // ------ DROPDOWN GAMES DATA ------
-// var select = document.getElementById
-
-
-
-// var dropGames = ["Medieval Madness","Attack From Mars", "Buck Hunter"];
-// console.log(dropGames);   
-
-
 
 
 
