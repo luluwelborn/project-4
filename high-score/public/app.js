@@ -1,7 +1,3 @@
-// ------ DROPDOWN GAMES DATA ------
-
-
-
 // ------ GET GAME ON PAGE ------
 // function saveToList(event) {
 //     if (event.which == 13 || event.keyCode == 13) { // save the data
@@ -115,7 +111,7 @@ function saveToList(event) {
  
 function saveToFB(gameName, gameScore) {
     // this will save data to Firebase
-    // console.log(gameName, gameScore);
+    console.log(gameName, gameScore);
     myGames.push({
         name: gameName,
         score: gameScore
@@ -125,7 +121,7 @@ function saveToFB(gameName, gameScore) {
 function refreshUI(list) {
     var lis = '';
     for (var i = 0; i < list.length; i++) {
-        lis += '<li data-key="' + list[i].key + '">' + list[i].name + "&nbsp; &nbsp;" + list[i].score + '  ' + genLinks(list[i].key, list[i].name, list[i].score) + '</li>';
+        lis += '<li data-key="' + list[i].key + '">' + list[i].name + list[i].score + '  ' + genLinks(list[i].key, list[i].name, list[i].score) + '</li>';
     };
     document.getElementById('myGames').innerHTML = lis;
 };
@@ -137,6 +133,7 @@ function genLinks(key, gmName, gmScore) {
     links += '<a href="javascript:del(\'' + key + '\',\'' + gmName + '\', \'' + gmScore + '\')">delete</a> <hr>';
     return links;
 };
+
  
 function edit(key, gmName, gmScore) {
     var gameName = prompt("Update the game name", gmName); 
@@ -182,4 +179,3 @@ myGames.on("value", function(snapshot) {
     // refresh the UI
     refreshUI(list);
 });
-
