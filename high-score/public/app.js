@@ -121,7 +121,7 @@ function saveToFB(gameName, gameScore) {
 function refreshUI(list) {
     var lis = '';
     for (var i = 0; i < list.length; i++) {
-        lis += '<li data-key="' + list[i].key + '">' + list[i].name + list[i].score + '  ' + genLinks(list[i].key, list[i].name, list[i].score) + '</li>';
+        lis += '<li data-key="' + list[i].key + '">' + list[i].name + "&nbsp;" + list[i].score + '  ' + genLinks(list[i].key, list[i].name, list[i].score) + '</li>';
     };
     document.getElementById('myGames').innerHTML = lis;
 };
@@ -136,7 +136,8 @@ function genLinks(key, gmName, gmScore) {
 
  
 function edit(key, gmName, gmScore) {
-    var gameName = prompt("Update the game name", gmName); 
+    var gameName = prompt("Update the game name", gmName);
+    var gameScore = prompt("Update the game score", gmScore);
     if (gameName && gameName.length > 0, gameScore && gameScore.length > 0) {
         // build the FB endpoint to the item in games
         var updateGameRef = buildEndPoint(key);
