@@ -107,6 +107,10 @@ h3	{
 	font-size: 30px;
 }
 
+p {
+	text-align: center;
+}
+
 p.p-landing {
 	text-align: center;
 	font-size: 16px;
@@ -139,6 +143,24 @@ p.p-landing {
 /*	opacity: 0.2;*/
 }
 
+.btn-secondary {
+	text-align: center;
+	color: #ff00ad;
+	background-color: #111;
+	border: 1px solid #ff00ad;
+	padding: 12px;
+	margin-top: 10px;
+}
+
+.btn-secondary:hover {
+	text-align: center;
+	color: #ff00ad;
+	background-color: #222;
+	border: 1px solid #ff00ad;
+	padding: 12px;
+	margin-top: 10px;
+}
+
 input.btn.btn-success-sm {
 	text-align: center;
 	color: #ff00ad;
@@ -152,8 +174,15 @@ input {
 	color: #666;
 	background-color: #333;
 	border: none;
-	padding-bottom: 0px;
+	padding: 10px !important;
+	margin: auto;
+	/*display: inline;*/
+	/*min-width: 230px;*/
 }
+
+/*#password.input {
+	padding: 10px;
+}*/
 
 select {
 	color: #222;

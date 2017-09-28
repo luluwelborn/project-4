@@ -4,7 +4,6 @@
   <meta charset=utf-8 />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Email/Password Authentication Example</title>
-
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- css -->
@@ -55,6 +54,8 @@
       }
       document.getElementById('quickstart-sign-in').disabled = true;
     }
+
+
     /**
      * Handles the sign up button press.
      */
@@ -86,6 +87,8 @@
       });
       // [END createwithemail]
     }
+
+
     /**
      * Sends an email verification to the user.
      */
@@ -99,6 +102,8 @@
       });
       // [END sendemailverification]
     }
+
+
     function sendPasswordReset() {
       var email = document.getElementById('email').value;
       // [START sendpasswordemail]
@@ -176,35 +181,39 @@
     };
   </script>
 </head>
+
+
 <body>
   <div>
-    <div class="mdl-card__title mdl-color-text--white">
+    <div class="container">
       <h2>Signup / login</h2>
     </div>
-    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-      <p>Enter an email and password below and either sign in to an existing account or sign up</p>
-
-          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+    <div class="container">
+      <p>Enter an email and password below to sign in or sign up.</p>
+        <div class="container" align="center">
+          <input class="input" type="text" id="email" name="email" placeholder="Email"/>
           &nbsp;&nbsp;&nbsp;
-          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
-          <br/><br/>
-          <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
+          <input class="input" type="password" id="password" name="password" placeholder="Password"/>
+        </div>
+<br>
+        <div class="container" align="center">
+          <button disabled class="btn-default" id="quickstart-sign-in" name="signin">Sign In</button>
           &nbsp;&nbsp;&nbsp;
-          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
+          <button class="btn-secondary" id="quickstart-sign-up" name="signup">Sign Up</button>
           &nbsp;&nbsp;&nbsp;
-          <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
-          &nbsp;&nbsp;&nbsp;
-          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>       
-  </div>
+          <!-- <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button> -->
+          <button class="btn-secondary" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>  
+        </div>     
+    </div>
    <!-- Container where we'll display the user details -->
-  <div class="quickstart-user-details-container">
-      Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+  <!-- <div class="quickstart-user-details-container">
+      Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span> -->
 
       <!-- user data on page -->
-       <div>Firebase auth <code>currentUser</code> object value:</div>
-            <pre><code id="quickstart-account-details">null</code></pre>
-      </div>
-   </div>
+       <!-- <div>Firebase auth <code>currentUser</code> object value:</div> -->
+            <!-- <pre><code id="quickstart-account-details">null</code></pre> -->
+    <!-- </div> -->
+  </div>
 
    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
 <script>

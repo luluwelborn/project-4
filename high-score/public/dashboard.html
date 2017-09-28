@@ -45,42 +45,57 @@
     </nav>
 
     <div class="container">
-      <h2>High Scores</h2>
+        <h2>High Scores</h2>
+    </div>
+      <br>
+    <div class="container">
+      <h6>Pick a Game</h6>
+      <!-- Dropdown -->
+      <select id="gameSelect">
+      <option value="PickAGame">Pick a Game</option>
+        <option value="TETRIS">TETRIS</option>
+        <option value="BUCK HUNTER">BUCK HUNTER</option>
+        <option value="MEDIEVAL MADNESS">MEDIEVAL MADNESS</option>
+        <option value="ATTACK FROM MARS">ATTACK FROM MARS</option>
+      </select>
+
+      <button type="button" onclick="getAppGame()">Add to List</button>
+
+
+    </div>
     <br>
 
-    <!-- Dropdown -->
-<!--     <div class="container">
-      <select id="appGames">
-      <option value="PickAGame">Pick a Game</option>
-        <option value="MedievalMadness">Medieval Madness</option>
-        <option value="AttackFromMars">Attack From Mars</option>
-        <option value="BuckHunter">BuckHunter</option>
-        <option value="Tetris">Tetris</option>
-      </select>
-    </div>
-    <br>  -->
-
-    <h6>Add a Game</h6>
-    <!-- Input Field Singular-->
-<!--     <div class="container">
-      <input type="text" name="gameName" placeholder="Enter Game Name" onkeypress="return saveToList(event)" />
-    </div> -->
-
-    <!-- Input fields and button -->
-    <form id="gameForm">
-        <input type="text" id="gameName" placeholder="Enter Game Name">
-
-        <input type="text" id="gameScore" placeholder="Enter Score">
-
-        <input type="button" onclick="saveToList()" value="SUBMIT">
-    </form>
-
-
-      <!-- List -->
-      <h3>My Games</h3>
-      <ul id="myGames">
+    <div class="container">
+      <ul id="appGames"
       </ul>
     </div>
+
+    <div class="container">
+      <h6>Add a Game</h6>
+      <!-- Input Field Singular-->
+  <!--     <div class="container">
+        <input type="text" name="gameName" placeholder="Enter Game Name" onkeypress="return saveToList(event)" />
+      </div> -->
+
+      <!-- Input fields and button -->
+      <form id="gameForm">
+          <input type="text" id="gameName" placeholder="Enter Game Name">
+
+          <input type="text" id="gameScore" placeholder="Enter Score">
+
+          <input type="button" onclick="saveToList()" value="SUBMIT">
+      </form>
+
+
+        <!-- List -->
+        <h3>My Games</h3>
+        <ul id='appGame'></ul>
+
+        <hr>
+        <ul id="myGames">
+        </ul>
+    </div>
+
 
     <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
     <script>

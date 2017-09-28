@@ -92,7 +92,7 @@
 
 // // /////////////////////////////////////////////////////
 
-// TRY TWO FIELDS
+// TWO FIELDS
 
 var myGames = new Firebase('https://high-score-app-3c45c.firebaseio.com/dashboard/');
 
@@ -180,3 +180,29 @@ myGames.on("value", function(snapshot) {
     // refresh the UI
     refreshUI(list);
 });
+
+// ////////////////////////////////////////////////////////
+
+// DROPDOWN DATA
+function getAppGame() {
+    var add = document.getElementById("gameSelect").value;
+    document.getElementById("appGame").innerHTML = add;
+}
+
+function newLinks(newScore) {
+    var links = '';
+    links += '&nbsp; <a href="javascript:edit(\'' + key + '\',\'' + gmName + '\', \'' + gmScore + '\')">add score</a>';
+    return links;
+};
+
+function edit(newScore) {
+    var newScore = prompt("Update the game name", newScore);
+    if (newScore && newScore > 0) {
+        // build the FB endpoint to the item in games
+        var updateGameRef = buildEndPoint(key);
+        updateGameRef.update({
+            score: newScore
+        });
+    }
+}
+
