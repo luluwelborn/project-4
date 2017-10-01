@@ -184,9 +184,16 @@ myGames.on("value", function(snapshot) {
 // ////////////////////////////////////////////////////////
 
 // DROPDOWN DATA
-function getAppGame() {
-    var add = document.getElementById("gameSelect").value;
-    document.getElementById("appGame").innerHTML = add;
+function getAppGame(list) {
+    var gameName = $('select option:selected').val();
+    console.log(gameName);
+    var gameScore = document.getElementById('dropDownScore').value.trim();
+    if (gameName.length > 0, gameScore.length > 0) {
+        saveToFB(gameName, gameScore);
+    };
+    document.getElementById('gameName').value = '';
+    document.getElementById('gameScore').value = '';
+    return false;
 }
 
 function newLinks(newScore) {
@@ -195,14 +202,14 @@ function newLinks(newScore) {
     return links;
 };
 
-function edit(newScore) {
-    var newScore = prompt("Update the game name", newScore);
-    if (newScore && newScore > 0) {
-        // build the FB endpoint to the item in games
-        var updateGameRef = buildEndPoint(key);
-        updateGameRef.update({
-            score: newScore
-        });
-    }
-}
+// function edit(newScore) {
+//     var newScore = prompt("Update the game name", newScore);
+//     if (newScore && newScore > 0) {
+//         // build the FB endpoint to the item in games
+//         var updateGameRef = buildEndPoint(key);
+//         updateGameRef.update({
+//             score: newScore
+//         });
+//     }
+// }
 
