@@ -23,7 +23,7 @@
   <body>
         <!-- NAVBAR -->
     <nav class="navbar navbar-fixed-top">
-      <div class="container">
+      <div>
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -32,13 +32,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">High Score</a>
+          <a class="navbar-brand" href="/">Home</a>
         </div>
         <!-- Navbar Links -->
         <ul class="nav navbar-nav">
           <!-- <li><a href="/index">Home</a></li> -->
-          <li><a href="/dashboard.html">Dashboard</a></li>
-          <li><a href="/signin.html">Sign In/Out</a></li>
+          <li><a class="navbar-brand" href="/dashboard.html">Dashboard</a></li>
+          <!-- <li><a href="/signin.html">Sign In/Out</a></li> -->
           <!-- <li><a href="/about">About</a></li> -->
         </ul>
       </div>
@@ -49,7 +49,7 @@
     </div>
       <br>
     <div class="container">
-      <h6>Pick a Game</h6>
+      <h6>PICK A GAME</h6>
       <!-- Dropdown -->
       <select id="gameSelect">
       <option value="PickAGame">Pick a Game</option>
@@ -59,9 +59,9 @@
         <option value="ATTACK FROM MARS">ATTACK FROM MARS</option>
       </select>
 
-      <input type="text" id="dropDownScore" placeholder="Enter Score">
+      <input type="text" id="dropDownScore" placeholder="Enter Score"> &nbsp;
 
-      <button type="button" onclick="getAppGame()">Add to List</button>
+      <button type="button" class="btn-secondary" onclick="getAppGame()">Add to List</button>
 
 
     </div>
@@ -72,20 +72,18 @@
       </ul>
     </div>
 
-    <div class="container">
-      <h6>Add a Game</h6>
-      <!-- Input Field Singular-->
-  <!--     <div class="container">
-        <input type="text" name="gameName" placeholder="Enter Game Name" onkeypress="return saveToList(event)" />
-      </div> -->
+    <br>
 
+    <div class="container">
+      <h6 padding:50px>ADD A GAME</h6>
+      <br>
       <!-- Input fields and button -->
       <form id="gameForm">
           <input type="text" id="gameName" placeholder="Enter Game Name">
 
           <input type="text" id="gameScore" placeholder="Enter Score">
 
-          <input type="button" onclick="saveToList()" value="SUBMIT">
+          <input type="button" class="btn-secondary" onclick="saveToList()" value="SUBMIT">
       </form>
 
 

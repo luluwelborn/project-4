@@ -10,10 +10,14 @@ body {
 nav.navbar-fixed-top {
 	background-color: #111;
 	border-color: #222 !important;
+	position: fixed;
+	text-align: left;
+    padding-left: 30px;
 }
 
 .navbar-brand {
 	font-family: 'Bungee', sans-serif;
+	font-size: 14px;
 }
 
 .navbar-toggle {
@@ -107,6 +111,13 @@ h3	{
 	font-size: 30px;
 }
 
+h6 {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	color: #666;
+}
+
 p {
 	text-align: center;
 }
@@ -150,6 +161,7 @@ p.p-landing {
 	border: 1px solid #ff00ad;
 	padding: 12px;
 	margin-top: 10px;
+	min-height: 40px;
 }
 
 .btn-secondary:hover {
@@ -185,7 +197,11 @@ input {
 }*/
 
 select {
-	color: #222;
+	color: #666;
+	background-color: #333;
+	height: 40px;
+	border-style: none;
+	margin-right: 10px;
 }
 
 #gameName {
@@ -202,6 +218,7 @@ select {
 	padding: 10px;
 	font-size: 16px;
 }
+
 
 /* background animation*/
 
